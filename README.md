@@ -56,9 +56,9 @@ TrafficSignDetection/
 │ model/
 │   ├── traffic_sign_default_settings_model.h5   # HDF5 des trainierten CNN
 │   ├── train_default_settings.py                # Training & Evaluation           
-│   └── detect.py                                # Live-Erkennung using ROI, NMS and Preprocessing via Webcam
-├────── Images/                                  # GTSRB-Datensatz
-└────── results/                                 # Training Accuracy and Results
+│   ├── detect.py                                # Live-Erkennung using ROI, NMS and Preprocessing via Webcam
+│   ├── Images/                                  # GTSRB-Datensatz
+│   └── results/                                 # Training Accuracy and Results
 ```
 
 ---
