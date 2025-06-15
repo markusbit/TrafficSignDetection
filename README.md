@@ -40,7 +40,7 @@ scikit-learn
 ## ▶️ Anwendung starten
 
 ```bash
-python scripts/detect_signs.py
+python trafficsigndetection/model/detect.py
 ```
 
 - Öffnet ein Kamerafenster  
@@ -53,20 +53,12 @@ python scripts/detect_signs.py
 
 ```
 TrafficSignDetection/
-│
-├── model/
-│   └── traffic_sign_model.h5      # HDF5 des trainierten CNN
-├── data/
-│   ├── Images/                    # GTSRB-Datensatz
-│   └── test_videos/               # Aufnahmen für Live-Tests
-├── scripts/
-│   ├── train_model.py             # Training & Evaluation
-│   ├── detect_signs.py            # Live-Erkennung via Webcam/DroidCam
-│   └── utils.py                   # ROI, NMS, Preprocessing
-├── results/
-│   └── confusion_matrix_results.xlsx
-├── README.md
-└── requirements.txt
+│ model/
+│   ├── traffic_sign_default_settings_model.h5   # HDF5 des trainierten CNN
+│   ├── train_default_settings.py                # Training & Evaluation           
+│   └── detect.py                                # Live-Erkennung using ROI, NMS and Preprocessing via Webcam
+├────── Images/                                  # GTSRB-Datensatz
+└────── results/                                 # Training Accuracy and Results
 ```
 
 ---
