@@ -1,0 +1,14 @@
+TrafficSignDetection
+
+Team: Markus Brandstetter
+
+Ziel dieser Diplomarbeit war die Entwicklung eines Systems zur automatisierten Erkennung von Verkehrszeichen in Echtzeit. 
+Durch den Einsatz eines selbst entwickelten KI-Modells auf Basis eines Convolutional Neural Networks (CNN) können Verkehrszeichen zuverlässig aus Kamerabildern erkannt und klassifiziert werden.
+
+Die Bildverarbeitung erfolgt über ein Region-of-Interest-Verfahren, das relevante Bildausschnitte filtert und an das Modell zur Analyse weitergibt. 
+Die Umsetzung wurde mit Python, TensorFlow/Keras und OpenCV realisiert. 
+Erste Ansätze für eine mobile App wurden ebenfalls erarbeitet.
+
+In den Testfahrten konnten Verkehrszeichen erfolgreich erkannt werden.
+
+Das Ergebnis ist ein funktionierendes Echtzeitsystem zur Erkennung von Verkehrszeichen, das für den Einsatz im autonomen Fahren geeignet ist.

@@ -1,0 +1,229 @@
+1. Einführung
+
+1.1 Motivation für die Arbeit
+
+    Warum Verkehrszeichenerkennung wichtig ist:
+    Die Verkehrszeichenerkennung ist ein zentraler Bestandteil autonomer Fahrzeuge und der Verkehrsüberwachung. Sie ermöglicht es Fahrzeugen, ihre Umgebung zu verstehen und sicher auf unterschiedliche Verkehrsbedingungen zu reagieren. Eine zuverlässige Erkennung der Verkehrszeichen ist entscheidend für die Fahrsicherheit und die Automatisierung des Straßenverkehrs.
+
+    Einsatz von Künstlicher Intelligenz (KI) zur Bildverarbeitung:
+    KI, insbesondere Deep Learning, hat in den letzten Jahren enorme Fortschritte gemacht und wird zunehmend für die Bildverarbeitung eingesetzt. Durch den Einsatz von Convolutional Neural Networks (CNNs) können Bilder von Verkehrszeichen effizient und präzise analysiert und interpretiert werden.
+
+1.2 Problemstellung und Zielsetzung
+
+    Herausforderungen der Verkehrszeichenerkennung:
+    Die Verkehrszeichenerkennung steht vor mehreren Herausforderungen, wie z.B. wechselnden Lichtverhältnissen, unterschiedlichen Wetterbedingungen, verschiedenen Formen und Größen der Schilder und einer großen Variabilität der Verkehrszeichen. Zudem kann die Qualität der Aufnahmen je nach Kamera und Umgebung variieren.
+
+    Ziel der Arbeit:
+    Das Ziel dieser Arbeit ist die Entwicklung eines robusten KI-Modells, das in der Lage ist, Verkehrszeichen zuverlässig und in Echtzeit zu erkennen, unabhängig von den Umgebungsbedingungen und der Qualität der Bildaufnahme.
+
+1.3 Relevanz des Themas in aktuellen Technologien
+
+    Technologische Relevanz:
+    In modernen Technologien, insbesondere im Bereich autonomes Fahren, Smart Cities und der Verkehrsüberwachung, ist die Verkehrszeichenerkennung ein Schlüsselthema. Sie ermöglicht eine effiziente und sichere Verkehrssteuerung, hilft Unfälle zu vermeiden und trägt zur Schaffung einer intelligenten Infrastruktur bei.
+
+1.4 Abgrenzung und Umfang der Arbeit
+
+    Fokus auf die Erkennung von Verkehrszeichen mit einem vordefinierten Datensatz:
+    In dieser Arbeit liegt der Fokus auf der Erkennung von Verkehrszeichen mithilfe eines vordefinierten Datensatzes (z.B. GTSRB). Es wird bewusst auf die Verwendung von YOLO (You Only Look Once) und anderen real-time Object Detection Frameworks verzichtet, um eine detailliertere und spezifischere Betrachtung der Verkehrszeichenerkennung mit klassischen Deep-Learning-Methoden zu ermöglichen.
+
+1.5 User Stories
+
+    Als Benutzer möchte ich die Möglichkeit haben, mein Gerät zu verwenden, um ein Verkehrszeichen zu erfassen und zu erkennen.
+    Als Benutzer möchte ich, dass die Anwendung in Echtzeit arbeitet und das erkannte Verkehrszeichen sofort angezeigt wird und der Verlauf gespeichert wird.
+    Als Benutzer möchte ich die Bedeutung des erkannten Verkehrszeichens angezeigt bekommen, einschließlich Geschwindigkeitsbegrenzungen, Richtungen oder anderen relevanten Informationen.
+    Als Benutzer möchte ich, dass die Anwendung auch offline funktioniert, damit ich sie auch in Gebieten ohne Internetverbindung nutzen kann.
+    Als Benutzer möchte ich, dass die Anwendung intuitiv und benutzerfreundlich ist.
+    Als Benutzer möchte ich Videos von Fahrten hochladen können, welche dann analysiert werden können.
+
+2. Grundlagen und Stand der Technik
+
+2.1 Verkehrszeichenerkennung – Ein Überblick
+
+    Historische und aktuelle Methoden der Verkehrszeichenerkennung:
+    Frühe Ansätze zur Verkehrszeichenerkennung basierten auf klassischen Bildverarbeitungsmethoden wie Kanten- und Farbsegmentierung. Mit dem Aufkommen von Deep Learning, insbesondere CNNs, hat sich die Erkennungsgenauigkeit erheblich verbessert.
+
+    Einsatz von Deep Learning und CNNs in der Verkehrszeichenerkennung:
+    Deep Learning-Algorithmen, insbesondere CNNs, haben in den letzten Jahren die klassische Bildverarbeitung weitgehend ersetzt. Sie bieten eine viel höhere Erkennungsgenauigkeit und Flexibilität bei der Verarbeitung von Bilddaten.
+
+2.2 Relevante KI-Modelle und Algorithmen
+2.2.1 Convolutional Neural Networks (CNNs)
+
+    Funktionsweise von CNNs und deren Anwendung in der Bildverarbeitung:
+    CNNs sind besonders gut für die Analyse von Bildern geeignet, da sie in der Lage sind, hierarchische Merkmale aus den Bilddaten zu extrahieren und zu verarbeiten. Sie bestehen aus mehreren Schichten, die eine detaillierte Analyse der Bildinhalte ermöglichen.
+
+2.2.2 Keras als Framework für Deep Learning
+
+    Vorteile von Keras und Integration mit TensorFlow:
+    Keras bietet eine benutzerfreundliche API zur Erstellung und zum Training von Deep Learning-Modellen. Die Integration mit TensorFlow ermöglicht eine effiziente Verarbeitung großer Datensätze und eine schnelle Modelloptimierung.
+
+2.3 Vergleich bestehender Ansätze zur Verkehrszeichenerkennung
+
+    Vergleich zwischen klassischen Bildverarbeitungsverfahren und Deep Learning-Methoden:
+    Klassische Verfahren, die auf Regeln und Heuristiken basieren, stoßen bei der Verkehrszeichenerkennung an ihre Grenzen, insbesondere in komplexen Umgebungen. Deep Learning-Methoden bieten hier eine viel größere Flexibilität und Robustheit, da sie aus Daten lernen und nicht explizit programmiert werden müssen.
+
+2.4 Herausforderungen und offene Fragen in der Forschung
+
+    Robustheit gegenüber Bedingungen wie Wetter und Lichtverhältnissen:
+    Eine der größten Herausforderungen bei der Verkehrszeichenerkennung ist die Robustheit des Modells gegenüber wechselnden Umgebungsbedingungen wie Regen, Nebel oder unterschiedliche Lichtverhältnisse.
+
+    Zukunftsperspektiven für die Verkehrszeichenerkennung:
+    In Zukunft könnte die Erkennung von Verkehrszeichen weiter verbessert werden, etwa durch die Integration von Multimodalität (Kombination von Bild- und Sensordaten) und fortschrittlicheren Deep Learning-Architekturen.
+
+3. Projektplanung und Systemarchitektur
+
+3.1 Definition der Projektstruktur
+3.1.1 Verwendung von Git und Versionskontrolle
+
+    Zusammenarbeit und Quellcodeverwaltung mit Git:
+    Git wird zur Versionskontrolle eingesetzt, um eine effiziente Zusammenarbeit im Team zu ermöglichen und die Codebasis kontinuierlich zu verbessern.
+
+3.1.2 Organisation der Software-Komponenten
+
+    Aufteilung des Systems in Module:
+    Das System wird in verschiedene Module unterteilt: Datenvorbereitung, Modelltraining und Frontend-Integration.
+
+3.2 Technologie-Stack und eingesetzte Werkzeuge
+3.2.1 Visual Studio Code – Entwicklungsumgebung
+
+    Warum VS Code als bevorzugte IDE:
+    Visual Studio Code bietet eine leistungsstarke und benutzerfreundliche Entwicklungsumgebung, die besonders für Python und JavaScript geeignet ist.
+
+3.2.2 Python & Keras/TensorFlow – Deep Learning Framework
+
+    Wahl von TensorFlow und Keras für das Modelltraining:
+    TensorFlow und Keras werden aufgrund ihrer Flexibilität und der breiten Unterstützung in der Deep Learning-Community gewählt. Sie bieten eine leistungsstarke Infrastruktur für die Modellierung und das Training.
+
+3.2.3 JavaScript & React Native – Frontend-Entwicklung
+
+    Verwendung von React Native zur App-Entwicklung:
+    React Native wird verwendet, um eine plattformübergreifende Anwendung zu entwickeln, die sowohl für Android als auch für iOS funktioniert.
+
+3.2.4 Pandas, NumPy, Matplotlib – Datenanalyse und Visualisierung
+
+    Einsatz von Tools für Datenanalyse und Visualisierung der Ergebnisse:
+    Diese Tools werden verwendet, um die gesammelten Daten zu analysieren und die Ergebnisse der Modelltests zu visualisieren.
+
+3.3 Aufbau der Hardware- und Softwareumgebung
+
+    Details zur verwendeten Hardware und Softwareumgebung:
+    Beschreibung der verwendeten Computer- und Server-Infrastruktur sowie der eingesetzten Softwaretools für Modelltraining und -tests.
+
+3.4 Definition von Anforderungen an die Anwendung
+
+    Anforderungen an das KI-Modell und die Frontend-Integration:
+    Das KI-Modell muss robust gegenüber verschiedenen Umweltbedingungen sein, und das Frontend muss eine benutzerfreundliche und reaktionsschnelle Oberfläche bieten.
+
+4. Umsetzung des Projekts
+
+4.1 Datenerfassung und Vorverarbeitung
+4.1.1 Auswahl und Verwendung von Trainingsdatensätzen (z.B. GTSRB)
+
+    Auswahl und Struktur des Datensatzes:
+    Der GTSRB (German Traffic Sign Recognition Benchmark) Datensatz wird verwendet, um das Modell zu trainieren. Der Datensatz enthält eine Vielzahl von Verkehrszeichen in unterschiedlichen Umgebungen und Perspektiven.
+
+4.1.2 Datenaugmentation
+
+    Techniken zur Erhöhung der Modellrobustheit (Rotation, Zoom, Flip):
+    Durch Datenaugmentation wird die Robustheit des Modells verbessert, indem verschiedene Varianten der Bilddaten generiert werden.
+
+4.1.3 Vorbereitung der Daten
+
+    Skalierung und Normalisierung der Bilder:
+    Die Bilder werden vor dem Modelltraining skaliert und normalisiert, um die Performance des Modells zu optimieren.
+
+4.2 Entwicklung des KI-Modells
+4.2.1 Architektur des CNN-Modells
+
+    Erklärung der Architektur des verwendeten CNN-Modells:
+    Das verwendete CNN-Modell basiert auf mehreren Convolutional und Pooling-Schichten, um hierarchische Merkmale zu extrahieren und schließlich die Verkehrszeichen zu klassifizieren.
+
+4.2.2 Trainingsprozess und Optimierung
+
+    Trainingsdetails, Hyperparameter und EarlyStopping:
+    Das Modell wird mit einer Vielzahl von Hyperparametern trainiert, und EarlyStopping wird verwendet, um Überanpassung zu vermeiden.
+
+4.3 Implementierung der Frontend-Komponenten
+4.3.1 Integration der Kamera-Funktionalität
+
+    Einschluss der Kamera für die Echtzeit-Scannung von Verkehrszeichen:
+    Die Kamera wird in der Anwendung eingebunden, um kontinuierlich Bilder oder Videos von der Umgebung zu erfassen. Die Echtzeit-Bilddaten werden an das KI-Modell gesendet, welches die Verkehrszeichen analysiert und entsprechende Informationen anzeigt.
+
+4.3.2 UI/UX-Design für die Anwendung
+
+    Design einer benutzerfreundlichen mobilen Oberfläche:
+    Die Benutzeroberfläche wird so gestaltet, dass der Nutzer schnell und einfach auf die gewünschten Funktionen zugreifen kann. Sie ist intuitiv und einfach zu bedienen, um auch unerfahrenen Nutzern eine benutzerfreundliche Erfahrung zu bieten.
+
+4.3.3 Live-Videostreaming und Echtzeitverarbeitung
+
+    Implementierung der Echtzeit-Videoverarbeitung für die Verkehrszeichenerkennung:
+    Die Anwendung verarbeitet in Echtzeit den Video-Stream der Kamera, erkennt Verkehrszeichen und zeigt die Ergebnisse direkt auf der Benutzeroberfläche an.
+
+4.4 Verbindung von Backend und KI-Modell
+4.4.1 Backend-Integration
+
+    Integration von Frontend und Modell zur Echtzeit-Datenverarbeitung:
+    Die Verbindung zwischen dem Frontend (App) und dem Backend (KI-Modell) wird hergestellt, um die Bilddaten vom Nutzer zur KI zu senden, die daraufhin die Erkennung durchführt und die entsprechenden Informationen zurückgibt.
+
+5. Testphase und Auswertung
+
+5.1 Erste Tests und Debugging-Prozess
+
+    Evaluierung der Videoqualität und Testergebnisse:
+    Erste Tests werden durchgeführt, um die Funktionsweise der Kamera und die Qualität der Bildaufnahmen in verschiedenen Umgebungen zu überprüfen. Fehler und unerwartete Ergebnisse werden während des Debugging-Prozesses identifiziert und behoben.
+
+5.2 Modell-Validierung und Performance-Analyse
+
+    Anwendung der Confusion-Matrix und Performance-Metriken:
+    Zur Validierung des Modells werden die üblichen Performance-Metriken wie Genauigkeit, Präzision, Recall und F1-Score verwendet. Eine Confusion-Matrix hilft dabei, die Klassifizierungsfehler des Modells zu analysieren.
+
+5.3 Verbesserungspotenziale und Optimierungsstrategien
+
+    Ansätze zur Verbesserung der Modellgenauigkeit und Benutzeroberfläche:
+    Es werden verschiedene Strategien zur Modelloptimierung und -verbesserung untersucht, wie z.B. eine erweiterte Datenaugmentation, die Anpassung der Netzwerkarchitektur oder die Einbindung zusätzlicher Modelle zur Verbesserung der Genauigkeit der Erkennung.
+
+6. Ergebnisse und Diskussion
+
+6.1 Zusammenfassung der wichtigsten Ergebnisse
+
+    Übersicht der Modellergebnisse und Leistungskennzahlen:
+    Die Ergebnisse des KI-Modells werden zusammengefasst. Es werden die wichtigsten Kennzahlen wie Genauigkeit, Zeit zur Erkennung und die Anzahl der korrekt erkannten Verkehrszeichen präsentiert.
+
+6.2 Interpretation der Testergebnisse
+
+    Fehleranalyse und Verbesserungspotential:
+    Eine detaillierte Analyse der Fehler, die während der Tests aufgetreten sind, hilft, Verbesserungspotential zu identifizieren. Es wird untersucht, in welchen Situationen das Modell weniger gut funktioniert und welche Anpassungen erforderlich sind.
+
+6.3 Vergleich mit bestehenden Lösungen
+
+    Vergleich des entwickelten Modells mit anderen Verkehrsschilderkennungssystemen:
+    Das entwickelte Modell wird mit anderen bestehenden Verkehrsschilderkennungssystemen verglichen, um dessen Stärken und Schwächen herauszustellen und zu bewerten, wie es im Vergleich abschneidet.
+
+7. Fazit und Ausblick
+
+7.1 Erreichte Ziele und Projekterfolge
+
+    Rückblick auf erfolgreiche Implementierung und Entwicklung:
+    Es wird auf die erreichten Ziele und die erfolgreiche Implementierung des Projekts zurückgeblickt. Dabei werden die wesentlichen Meilensteine, wie die Modellentwicklung, Integration und die erfolgreiche Echtzeit-Erkennung, hervorgehoben.
+
+7.2 Herausforderungen während der Umsetzung
+
+    Beschreibung der Herausforderungen und angewandten Lösungen:
+    Die größten Herausforderungen während der Umsetzung des Projekts werden aufgezeigt, wie z.B. die Handhabung von variierenden Lichtverhältnissen und schwierigen Umgebungsbedingungen. Es werden die angewandten Lösungen und Anpassungen beschrieben.
+
+7.3 Weiterentwicklungen und zukünftige Forschungsfragen
+
+    Ausblick auf zukünftige Forschungsfragen und Modellverbesserungen:
+    Es wird ein Ausblick auf die Weiterentwicklung des Modells gegeben. Dazu gehören mögliche Erweiterungen wie die Integration von Multimodalität (z.B. Kombination von Bildern und Sensorinformationen) oder die Verbesserung der Robustheit des Modells in schwierigen Umgebungen.
+
+8. Quellen und Literaturverzeichnis
+
+    Auflistung der verwendeten wissenschaftlichen Quellen, Literatur und Online-Ressourcen:
+    Eine vollständige Liste der Quellen und Literatur, die zur Erstellung der Arbeit verwendet wurden. Dies umfasst wissenschaftliche Artikel, Bücher, Online-Ressourcen und alle relevanten Materialien, die bei der Forschung und der Modellentwicklung verwendet wurden.
+
+9. Anhang
+
+    Detaillierte technische Dokumentation
+    Hier wird die technische Dokumentation des Projekts angegeben, einschließlich der verwendeten Code-Snippets, Diagramme der Systemarchitektur, und zusätzliche technische Erläuterungen.
+
+    Screenshots und Anwendungsbeispiele
+    Screenshots der Benutzeroberfläche und Beispiele für die Nutzung der Anwendung. Dies könnte auch Beispielszenarien zur Demonstration der Funktionalität umfassen.

@@ -1,0 +1,18 @@
+Verkehrzeichentabellen, bekannte Zeichen für AI Modell erstellen
+https://github.com/Project-Road-Sign-Detection/Tensorflow-Street-Sign-Recognition
+
+
+https://towardsdatascience.com/how-to-train-a-custom-object-detection-model-with-yolo-v5-917e9ce13208
+
+Chinese Complete Project
+https://cg.cs.tsinghua.edu.cn/traffic-sign/
+
++) Alle Code und Kapitelbeschreibungen und Texte
+Abbildungen und Codelistings Quellen verknüpfen 
+Quellen wie stackoverflow, javascript, react, python, matplotlib, yolo hinzufügen
++) Codeformatting
+~) formel in ergebnisse und ergebnisse interpretieren etc. 
+
+Übersichtsgrafik anpassen
+Kapitel umändern für Zottl und richtige Reihenfolgen
+Erklärungen bzw. Beschreibungen von Code und Grafiken etc. für Kapitel

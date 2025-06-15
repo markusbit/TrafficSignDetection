@@ -1,0 +1,233 @@
+das ist mein arbeits protokoll: 
+
+Tätigkeit
+
+Abstimmung mit Betreuer, erste Schritte
+Erste Schritte
+Projektdetails ausarbeiten, App-Funktionen definiert, Design mit Betreuer abgesprochen
+Projektstruktur definieren, Git-Repository erstellen, React Native Dokumentation ausarbeiten, Flutter Dokumentation, KI-Framework suchen, Virtual-Device erstellen, React Native Projekt, Flutter Projekt
+Project erste Designideen und Projekt Struktur
+Marktanalyse, Wettbewerb, Logoideen
+Logodesign
+Frontend-Camera, LIVE-Page, AI-Modell-Aufbau mit Betreuer besprochen, Trainingsvorgang,  Datenaufbereitung und Integration ins Frontend besprochen
+KFZ-Halterung suchen und bestellen, HomeScreen-Komponente: Videoübersicht-Design
+Homescreen-Komponente: Thumbnails
+Homescreen-Komponente: Video-Upload
+Erstes Videomaterial aufnehmen, Kamerahalterung
+Videomaterialqualität interpretieren, Überlegungen zur Aufnahmeoptimierung vornehmen
+Homescreenkomponente: Videos
+Videomaterial, Halterung des Smartphones, verschiedene Aufnahmemöglichkeiten testen
+Videomaterial: Autofahrt aufnehmen, stabilere Halterung
+Homescreenkomponente: Videoupload/Kamerainput weitergearbeitet
+Homescreenkomponente: Videoupload/Kamerainput weitergearbeitet, Firebase austesten, Cloudspeicher und Limits
+Videomaterial: Autofahrt aufnehmen 
+Abstimmung mit Betreuer, neue Erkenntnisse zu Videospeicherung, Homescreenkomponente ersetzt
+Weiterarbeiten Navigation und Camerascreen, Logo einbinden, erste Tests mit Androidgerät, Version upgraden, Logo resizable positionieren
+Android-Weitwinkelkamera-Dokumentation durcharbeiten 
+Webapp verbessern, Firefox, Chrome, Edge, Browserkompatibilität, Verkehrszeichentabelle Datensatz Institut für Neuroinformatik, KI-Modelle für Imageerkennung, Performance mit Betreuer absprechen
+Recherche zu KI-Modellen in Python
+Keras, Tensorflow, YOLO-Model, KI-Training-Modelle, React-Native-Converter
+KI-Modelle mit YOLO8, Ultralytics, Roboform-Bildausschneidetool
+KI-Modell erstellen, erste Schritte zur praktischen Durcharbeitung
+KI-Modell weiterentwickeln
+KI-Modell YOLO8, erste Trainingsdaten einspielen
+KI-Modell YOLO8, Datensatz importieren
+KI-Modell YOLO8 konfiguerieren
+PyTorch, YOLO, Training, Errorbehebung, Modell-Weiterentwicklung, Dependencies, .ppm auf .jpg konvertieren, Bounding-Boxes Default-Einstellungen konfiguerieren, konvertieren erfolgreich, und erster Testtrainingsdurchlauf
+Bugfix Torch, Errorhandling, Library Dependencies 
+Torch Dependencies weitererer Bugfix
+YOLO Modell 8
+Torch Dependency Updates
+TrafficSignDetection Box Modell
+TrafficSignDetection Keras Modell und Datensatz implementation
+Erstes funktionales KI-Modell erstellen, Trainingsdurchlauf
+Erste funktionale Anwendung und praktische Applikation des Modells
+KI-Modell weiterentwicklung
+KI-Modell finalisieren und weitere erfolgreiche Trainingsdurchläufe
+KI-Modell Auswertung, Konfusionmatrix
+KI-Modell Video Auswertung aus Echtdaten
+KI-Modell auswertung aus Videos
+KI-Modell Training mit Auswertung der Konfusion Matrix
+KI-Modell Anpassung an Tensorflow
+KI-Modell in Tensorflow einbauen
+Trainingsdaten Testschnitte aus Videomaterial ausschneiden 
+Trainingsdaten Testschnitte anwenden an KI-Modell und testen
+Testimages in KI-Modelltraining einbauen
+Erste Anläufe für  Übersetzung in Tensorflow, Tensorflow Dokumentation abarbeiten
+Praktische Applikation der Testimages im Modell 
+Auswertung der Ergebnisse der Testimages von Tensorflow
+Tensorflow Dokumentation weiterausarbeiten
+Bildausschnitte der Videos einspielen
+Ergebnisse der Vollbilder auswerten
+LIVE Kamerafunktion einbauen
+Erste Ansätze Kameraobjekterkennung, Dokumentation ROI (Region of Interest)
+ROI Border-Box-Modell Erkennung entwickeln
+ROI Border-Box-Modell Erkennung, Shapes filtern
+ROI Border-Box Modell Demonstration, Erste Auswertungen der erkannten Regionen mit KI-Modell
+KI-Modell Excel Auswertung, Besprechung mit Betreuer, Genauigkeit des Modells analysieren, Abstract und Zusammenfassung
+KI-Ergebnisse angleichen an Live Detection mit Kamera und Ergebnisse interpretieren
+KI Versuche um gleiche Ergebnisse zu reproduzieren
+KI anpassen um ROI Inputs mit Debugging auszuwerten, Ziele definieren
+Dokumentation - Struktur anfertigen, KI-Modell mit ROI Genauigkeit Kategorien implementieren
+Absprache mit DA-Betreuer, derzeitigen Stand erfassen, Ergebnisse auswerten
+Dokumentation, Kapitel, Unterüberschriften, Inhalte definieren, Überschriften und Kapitel fertigstellen
+
+#############################################################################################################
+
+1. Einleitung
+
+2. Verwandte Arbeiten
+- 2.1 TSR Process
+- - 2.1.1 Image Acquisition
+- - 2.1.2 Preprocessing
+- - 2.1.3 Traffic Detection (TSD) Module
+- - 2.1.4 Traffic Sign Classification
+- - 2.1.5 Result
+- 2.2 Science Gaps in Existing TSR Systems
+
+3. Proposed TSR Methodology
+- 3.1 Traffic Sign Detection (TSD) Step
+- 3.2 Traffic Sign Classification (TSC) Step
+- - 3.2.1 GTSRB Dataset
+- - 3.2.2 TSC Models and Architectures
+- - - 2.3.3.1 Attention mechanism
+- - - 2.3.3.2 Classificatoin metrics
+- - - 2.3.3.3 Obtaines results without Attention mechanism (pretrained)
+- - - 2.3.3.4 Obtaines results with Attention mechanism (custom)
+- - - 2.3.3.5 Classification step's performance evaluation
+
+4. Experimental Results and Discussion
+- 4.1 ARM Experimentation
+- 4.2 Rasperry Pi Experimentation
+
+5. Conclusions
+
+6. Quellen
+	
+#############################################################################################################
+
+#############################################################################################################
+
+1 Einleitung
+    1.1 Motivation für die Arbeit
+    1.2 Umfeld, Stand der Technik
+    1.3 Aufgabenstellung
+        1.3.1 Ziele
+        1.3.2 Nicht-Ziele
+2 Bewertungssystem
+    2.1 Anforderungen
+        2.1.1 Bewertung
+        2.1.2 Ausführung
+        2.1.3 Zeitaufwand
+        2.1.4 Testfälle
+    2.2 EvaluationSystem
+        2.2.1 Evaluierungsprozess
+        2.2.2 EvaluationConfig
+        2.2.3 Ausführung
+    2.3 Implementierung
+        2.3.1 Programmierung in Kotlin
+        2.3.2 Solution
+        2.3.3 Ausführung
+        2.3.4 EvaluationInstance
+        2.3.5 TestCase
+        2.3.6 ArgumentGenerator
+        2.3.7 RatingStrategy
+3 Benutzerverwaltung
+    3.1 Azure Active Directory
+        3.1.1 Probleme
+        3.1.2 Klassifizierung
+4 Zentrale Schnittstelle
+    4.1 Anforderungen
+        4.1.1 Datenmodell
+        4.1.2 Bewertungssystem
+        4.1.3 Zugriffskontrolle
+    4.2 GradingBot API
+        4.2.1 Datenmodell
+        4.2.2 EvaluationSystem
+        4.2.3 Zugriffskontrolle
+    4.3 Implementierung
+        4.3.1 Spring Boot als Framework
+        4.3.2 Datenmodell
+        4.3.3 Integration der EvaluationSystem Library
+        4.3.4 Zugriffskontrolle
+5 WebApp
+    5.1 Anforderungen
+    5.2 Frameworks
+        5.2.1 Reaktivität
+        5.2.2 Rendering
+        5.2.3 Deployment
+    5.3 SvelteKit vs. Next.js
+        5.3.1 Programmierung
+        5.3.2 Frontend-Lösung
+        5.3.3 Ökosystem und Community-Unterstützung
+        5.3.4 Bundle-Größe
+    5.4 Typensicherheit
+        5.4.1 TypeScript: Statische Typisierung für
+                            Fehlervermeidung
+        5.4.2 OpenAPI-Spezifikation: Definierung klarer
+                            Schnittstellen
+        5.4.3 openapi-fetch Library: Typsichere
+                            HTTP-Anfragen
+    5.5 User Interface und User Experience
+        5.5.1 Accessibility
+        5.5.2 Designprozess
+        5.5.3 Tailwind CSS
+    5.6 Code Editor
+        5.6.1 Monaco
+        5.6.2 Codemirror Editor:
+        5.6.3 Technologiewahl
+    5.7 Landing Page
+    5.8 Dashboard
+    5.9 Schüler Ansicht
+        5.9.1 Assignment
+        5.9.2 Task
+    5.10 Abgabenverwaltung
+    5.11 Aufgabenerstellung
+    5.12 Aufgabenbearbeitung
+        5.12.1 Task Übersicht
+        5.12.2 Assignment Details
+    5.13 Blog
+        5.13.1 Post
+        5.13.2 Graph API
+6 Visual Studio Code Extension
+    6.1 Einarbeitung
+        6.1.1 Erste Hello World Extension
+    6.2 Verständnis der Entwicklungsumgebung und nötige
+                    Konfiguration
+    6.3 WebViews
+        6.3.1 Svelte
+        6.3.2 Rollup
+    6.4 OAuth und Azure Active Directory
+    6.5 Anwendung
+        6.5.1 Übersicht offener Aufgaben
+        6.5.2 Task-Übersicht
+7 Server Landschaft
+    7.1 GradingBot Server
+        7.1.1 Betriebssystem
+        7.1.2 Unsere OS-Anforderungen
+        7.1.3 Debian
+    7.2 Server Dienste
+        7.2.1 Secure Shell
+        7.2.2 Bash
+        7.2.3 Datenbank
+        7.2.4 Nginx
+        7.2.5 Docker
+        7.2.6 Docker-Compose
+        7.2.7 API Service
+        7.2.8 PM2
+    7.3 CI/CD
+        7.3.1 Einführung
+        7.3.2 Gitea Actions
+        7.3.3 Drone
+8 Test
+    8.1 Ui/Ux Tests
+        8.1.1 Einleitung für Tests
+        8.1.2 Usability und User Experience
+    8.2 Lehrerumfrage
+    8.3 Kontinuierlicher Verbesserungsprozess
+        8.3.1 Erster Praxis Test
+        8.3.2 Zweiter Praxis Test
+    8.4 Schlussfolgerung
+
+######################################################################################################
+

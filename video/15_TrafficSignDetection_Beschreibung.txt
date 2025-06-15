@@ -1,0 +1,18 @@
+TrafficSignDetection
+
+Markus Brandstetter, 5BHITS
+HTBL Hollabrunn – Abteilung Informationstechnologie
+Betreuer: Dipl.-Ing. Gerald Zottl
+
+Kurzbeschreibung:
+Im Rahmen dieser Diplomarbeit wurde ein KI-basiertes System zur Erkennung von Verkehrszeichen in Echtzeit entwickelt.
+Der Schwerpunkt liegt auf der zuverlässigen Identifikation und Anzeige von Geschwindigkeitsbegrenzungen anhand von Live-Videodaten.
+Das System nutzt ein eigens trainiertes Convolutional Neural Network (CNN), das mit dem GTSRB-Datensatz entwickelt wurde, und verarbeitet Kamerabilder mittels Region-of-Interest-Erkennung.
+Ziel war die Entwicklung einer technischen Lösung, die als Basis für moderne Fahrerassistenzsysteme dienen kann. Die Umsetzung erfolgte mit Python, TensorFlow/Keras und OpenCV.
+Das System wurde erfolgreich getestet und liefert zuverlässige Erkennungsergebnisse in Echtzeit.
+
+Musik:
+https://pixabay.com/music/upbeat-technology-music-ai-mobile-app-tech-ambient-background-intro-theme-334871/
+
+Tags:
+HTL Hollabrunn, Diplomarbeit, Verkehrszeichenerkennung, TrafficSignDetection, CNN, Deep Learning, Python, Fahrerassistenz
