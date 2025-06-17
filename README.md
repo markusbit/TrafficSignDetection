@@ -71,6 +71,10 @@ TrafficSignDetection/
 
 ---
 
+![verkehr2](https://github.com/user-attachments/assets/e601f2a3-4c53-482e-8a48-4df726fea3d8)
+
+---
+
 ## 🚀 Ausblick
 
 - Mobile App-Integration (iOS/Android)  
