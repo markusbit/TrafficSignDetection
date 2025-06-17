@@ -1,7 +1,7 @@
 # 🚗 TrafficSignDetection
 
 Ein KI-gestütztes System zur Echtzeit-Erkennung von Verkehrszeichen aus Kamerabildern.  
-Entwickelt im Rahmen der Diplomarbeit von Markus Brandstetter an der HTBL Hollabrunn, Schuljahr 2024/25.
+Entwickelt im Rahmen meiner Diplomarbeit an der HTBL Hollabrunn, Schuljahr 2024/25.
 
 ---
 
